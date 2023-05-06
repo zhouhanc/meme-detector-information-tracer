@@ -6,5 +6,9 @@ meme detector using image from information tracer
 
 ## Installation
 ```
-!
+!pip install img2vec_pytorch
+!pip install informationtracer
+!pip install easyocr
+!pip install transformers
+!pip install face_recognition
 ```
