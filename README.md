@@ -2,13 +2,13 @@
 
 meme detector using image from information tracer
 
-#Getting Started
+## Getting Started
 
-## Pre-requisite
+### Pre-requisite
 * Python
 * informationtracer token
 
-## Installation
+### Installation
 ```
 !pip install img2vec_pytorch
 !pip install informationtracer
@@ -16,17 +16,17 @@ meme detector using image from information tracer
 !pip install transformers
 !pip install face_recognition
 ```
-## Clone the repository
+### Clone the repository
 ```
 git clone https://github.com/zhouhanc/meme-detector-information-tracer.git
 ```
 
-## Usage
+### Usage
 
 * You can run the main.py with the following code:
-'''
+```
 python main.py <querywords> <token> <start_date> <end_date> <platform>
-'''
+```
 
 * There are also some default parameters as below:
 
@@ -35,8 +35,8 @@ python main.py <querywords> <token> <start_date> <end_date> <platform>
 - "display" : whether to show the clustered images in each group, default False.
 
 The corresponding code is as below:
-'''
+```
 python main.py <querywords> <token> <start_date> <end_date> <platform> <n_class> <npca> <display>
-'''
+```
 
 
