@@ -9,5 +9,6 @@
 #packages need to be installed
 !pip install img2vec_pytorch
 !pip install informationtracer
+!pip install transformers
 !pip install easyocr
 !pip install face_recognition

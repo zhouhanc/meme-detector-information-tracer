@@ -6,7 +6,7 @@ from os import path
 import requests
 from img2vec_pytorch import Img2Vec
 from PIL import Image
-
+import subprocess
 
 # Initialize Img2Vec converter
 img2vec_ = Img2Vec(cuda=False)
@@ -17,6 +17,9 @@ def download_image_from_information_tracer(platform, id_hash256, token):
     image text, image path, platform
 
   """
+  subprocess.run(['rm', '-rf', 'twitter_image', 'facebook_image', 'instagram_image', 'reddit_image', 'youtube_image'])
+  subprocess.run(['mkdir', 'twitter_image' ,'facebook_image' ,'instagram_image' ,'reddit_image','youtube_image'])
+
   print('downloading images from {}...'.format(platform))
   url = 'https://informationtracer.com/loadsource?token={}&source={}&id_hash256={}&limit=1000&truncated=yes'.format(token, platform, id_hash256)
   all_posts = requests.get(url).json()
